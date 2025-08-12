@@ -1,0 +1,13 @@
+sniper-server/
+├── frontend/
+│   ├── index.html
+│   ├── styles.css
+│   ├── scripts.js
+│   └── assets/
+│       ├── images/
+│       └── fonts/
+├── backend/
+│   ├── app.py
+│   ├── database.py
+│   └── requirements.txt
+└── README.md
