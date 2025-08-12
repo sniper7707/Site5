@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرفر القناص المتكامل</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <!-- شريط التنقل -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <h1>سيرفر القناص</h1>
+            <span>👑 alaa badeeh 👑</span>
+        </div>
+        <div class="nav-links">
+            <a href="#services">الخدمات</a>
+            <a href="#dashboard">لوحة التحكم</a>
+            <a href="#payments">الشحن</a>
+            <a href="#support">الدعم</a>
+        </div>
+        <div class="user-actions">
+            <button id="theme-toggle">تبديل الوضع</button>
+            <button id="login-btn">تسجيل الدخول</button>
+        </div>
+    </nav>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services-section">
+        <h2 class="section-title neon-text">خدماتنا</h2>
+        <div class="filters">
+            <select id="platform-filter">
+                <option value="all">جميع المنصات</option>
+                <option value="instagram">إنستغرام</option>
+                <option value="facebook">فيسبوك</option>
+                <option value="tiktok">تيك توك</option>
+            </select>
+        </div>
+
+        <div class="services-grid">
+            <!-- خدمة مثال (سيتم توليدها ديناميكيًا) -->
+            <div class="service-card glass-card">
+                <div class="service-icon">📱</div>
+                <h3>متابعين إنستغرام</h3>
+                <p>1000 متابع حقيقي</p>
+                <div class="price">15 جنيه</div>
+                <button class="order-btn">طلب الخدمة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- لوحة التحكم -->
+    <section id="dashboard" class="dashboard-section">
+        <h2 class="section-title">لوحة التحكم</h2>
+        <div class="stats-container">
+            <div class="stat-card glass-card">
+                <h3>الرصيد</h3>
+                <div class="stat-value">150.00 جنيه</div>
+            </div>
+            <div class="stat-card glass-card">
+                <h3>الطلبات النشطة</h3>
+                <div class="stat-value">12</div>
+            </div>
+        </div>
+
+        <div class="orders-table glass-card">
+            <h3>آخر الطلبات</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الخدمة</th>
+                        <th>الكمية</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>لايكات إنستغرام</td>
+                        <td>5000</td>
+                        <td class="status-completed">مكتمل</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- قسم الشحن -->
+    <section id="payments" class="payment-section">
+        <h2 class="section-title">شحن الرصيد</h2>
+        <div class="payment-methods">
+            <div class="method glass-card">
+                <img src="assets/vodafone-cash.png" alt="Vodafone Cash">
+                <p>فودافون كاش</p>
+            </div>
+            <!-- طرق دفع أخرى -->
+        </div>
+        
+        <div class="payment-form glass-card">
+            <h3>إضافة رصيد</h3>
+            <input type="number" placeholder="المبلغ بالجنيه" id="amount">
+            <button id="confirm-payment">تأكيد الدفع</button>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
